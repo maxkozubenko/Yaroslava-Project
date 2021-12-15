@@ -1,6 +1,6 @@
 const User = require('../models/User');
 const Truck = require('../models/Truck');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
   
   const handleServerError = (res, error) => {
     console.log(error);

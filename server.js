@@ -23,6 +23,11 @@ app.use(morgan(':method :url :status :res[content-length] - :response-time ms'))
 app.use(express.json());
 app.use(cors());
 app.use(corsMiddleware);
+
+app.get('/', function (req, res) {
+    res.sendFile(path.join(__dirname + '/public/index.html'));
+});
+
 app.use(authRoute);
 app.use(userRoute);
 app.use(truckRoute);
