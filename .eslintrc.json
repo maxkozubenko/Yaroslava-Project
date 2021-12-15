@@ -8,8 +8,11 @@
         "google"
     ],
     "parserOptions": {
-        "ecmaVersion": 12
+        "ecmaVersion": 12,
+        "requireConfigFile": false,
     },
     "rules": {
-    }
+        "global-require": 0,
+    },
+    "parser": "@babel/eslint-parser"
 }
